@@ -1,0 +1,97 @@
+/* Define primary color palette */
+:root {
+    --primary-color: #ee4950; /* Soft Red */
+    --dark-color: #080808; /* Dark Charcoal */
+    --background-color: #141414; /* Deep Charcoal for background */
+    --text-color: aliceblue; /* Light text for contrast */
+    --accent-color: #ffffff; /* White for accents and highlights */
+}
+
+/* Body styling */
+body {
+    background-color: var(--background-color); /* Deep background */
+    color: var(--text-color); /* Light text for readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean and modern font */
+    line-height: 1.6; /* Ensure good line spacing */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: var(--dark-color); /* Dark header */
+    color: var(--primary-color); /* Red text for accents */
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--primary-color); /* Subtle red border */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-color);
+    padding: 10px 0;
+    border-top: 1px solid var(--primary-color);
+}
+
+nav a {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-color); /* Hover effect with primary color */
+}
+
+/* Section Styling */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Highlighted section with soft red accents */
+section.highlight {
+    background-color: var(--dark-color);
+    color: var(--primary-color);
+}
+
+/* Button Styling */
+button {
+    background-color: var(--primary-color); /* Red background */
+    color: var(--accent-color); /* White text */
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--dark-color); /* Darken button on hover */
+    color: var(--primary-color); /* Red text when hovered */
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--dark-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    border-top: 2px solid var(--primary-color);
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}

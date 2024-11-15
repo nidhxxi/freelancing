@@ -1,0 +1,142 @@
+/* Page Layout for Projects Section */
+.all-projects-page {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+    gap: 4vw;
+    padding: 2vh 4vw;
+}
+
+/* Filters Section */
+.project-filters {
+    width: 22%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    padding: 3vh 2vw;
+    height: 82vh;
+    border-radius: 1rem;
+    overflow-y: auto;
+    background-color: #ffffff;
+}
+
+.project-filters h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5vh;
+}
+
+/* Filter Group Styling */
+.filters {
+    margin-top: 3vh;
+}
+
+/* Filter Titles */
+.filters h5 {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 1vh;
+}
+
+/* Filter Options */
+.filter-options {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 2vh;
+}
+
+/* Projects List Section */
+.my-projects-list {
+    width: 73%;
+    height: 82vh;
+    overflow-y: scroll;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    border-radius: 1rem;
+    padding: 3vh 2vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Divider Between Project List */
+.projects-list hr {
+    color: rgb(200, 200, 200);
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+/* Project Card Styling */
+.listed-project {
+    padding: 2vh 1.5vw;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: #f9f9f9;
+    border-radius: 0.8rem;
+    transition: background-color 0.3s ease;
+}
+
+.listed-project:hover {
+    background-color: rgba(240, 240, 240, 0.7);
+    cursor: pointer;
+}
+
+/* Project Title and Head */
+.listed-project-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5vh;
+}
+
+.listed-project-head h3 {
+    width: 80%;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #227396;
+    font-weight: 600;
+}
+
+.listed-project-head p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Skills Section Styling */
+.listed-project .skills {
+    display: flex;
+    gap: 12px;
+    margin-top: 2vh;
+}
+
+.listed-project .skills h6 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #ee4950;
+    border: 1px solid #ee4950;
+    padding: 6px 12px;
+    border-radius: 1.5rem;
+    background-color: rgba(238, 73, 80, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.listed-project .skills h6:hover {
+    background-color: #ee4950;
+    color: #fff;
+}
+
+/* Bids Section Styling */
+.listed-project .bids-data {
+    display: flex;
+    gap: 25px;
+    margin-top: 2vh;
+}
+
+.listed-project .bids-data p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.listed-project .bids-data h6 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #227396;
+}
