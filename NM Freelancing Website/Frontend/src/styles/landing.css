@@ -1,0 +1,130 @@
+/* Landing Page Container */
+.landing-page {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Modern, elegant font */
+}
+
+/* Hero Section */
+.landing-hero {
+    background: url('../images/landing-bg.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffffee;
+    position: relative;
+    overflow: hidden;
+}
+
+.landing-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for better contrast */
+    z-index: 1;
+}
+
+/* Navigation */
+.landing-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    height: 15vh;
+    z-index: 2;
+}
+
+.landing-nav h3 {
+    font-size: 2.5rem; /* Slightly adjusted for better legibility */
+    color: #ffffff;
+    font-family: 'Kaushan Script', cursive; /* Elegant, handwritten style */
+    margin: 0;
+}
+
+.landing-nav button {
+    padding: 12px 30px; /* Adjusted for better balance */
+    font-size: 1.1rem; /* Slightly larger font for readability */
+    background-color: transparent;
+    border: 2px solid #ffffff90;
+    color: #ffffffb3;
+    border-radius: 3rem;
+    transition: all 0.3s ease;
+    font-weight: bold; /* Added boldness for emphasis */
+}
+
+.landing-nav button:hover {
+    background-color: #ffffff20;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+/* Hero Text */
+.landing-hero-text {
+    text-align: center;
+    z-index: 2;
+    width: 80%; /* Increased width for more space */
+    max-width: 900px; /* Slightly wider max width */
+    padding: 20px; /* Added padding for better spacing */
+}
+
+.landing-hero-text h1 {
+    font-size: 4rem; /* Increased font size for better impact */
+    margin: 0 0 20px;
+    line-height: 1.2;
+    font-weight: 700; /* Added boldness for prominence */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Soft shadow for text contrast */
+}
+
+.landing-hero-text p {
+    font-size: 1.3rem; /* Slightly larger for better readability */
+    color: #ffffffb8;
+    margin: 0 0 30px; /* Increased margin for spacing */
+    line-height: 1.6;
+    max-width: 80%; /* Better control over line length */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.landing-hero-text button {
+    padding: 14px 40px; /* Adjusted for a more prominent CTA */
+    font-size: 1.2rem; /* Slightly larger font for clarity */
+    background-color: transparent;
+    border: 2px solid #ffffff90;
+    color: #ffffffb3;
+    border-radius: 3rem;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase; /* Added for emphasis */
+}
+
+.landing-hero-text button:hover {
+    background-color: #ffffff20;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .landing-hero-text h1 {
+        font-size: 3rem; /* Reduced for smaller screens */
+    }
+    .landing-nav h3 {
+        font-size: 2rem; /* Adjusted for better legibility */
+    }
+    .landing-hero-text p {
+        font-size: 1.1rem; /* Adjusted for smaller screens */
+    }
+    .landing-nav button,
+    .landing-hero-text button {
+        padding: 10px 25px; /* Adjusted button padding for mobile */
+        font-size: 1rem; /* Adjusted for mobile clarity */
+    }
+}

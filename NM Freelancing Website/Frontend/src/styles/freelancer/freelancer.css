@@ -1,0 +1,215 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+/* Freelancer Home Section */
+.freelancer-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 0;
+}
+
+/* Freelancer Data - Top Section */
+.freelancer-data-top {
+    position: relative;
+    left: 75vw;
+    width: fit-content;
+    margin: 20px;
+}
+
+.freelancer-data-top span {
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+}
+
+.freelancer-data-top span b {
+    font-size: 1.4rem;
+    color: #2b2a2a;
+}
+
+.freelancer-data-top span p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #636363;
+}
+
+/* Home Cards Layout */
+.home-cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Home Card Design */
+.home-card {
+    width: 22%;
+    padding: 3vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(231, 220, 215, 0.13);
+    border-radius: 1rem;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(196, 191, 189, 0.26);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.home-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Home Card Title */
+.home-card h4 {
+    font-size: 1.4rem;
+    color: #2b2a2a;
+    font-weight: 600;
+    margin-bottom: 1vh;
+    text-transform: uppercase;
+}
+
+/* Home Card Paragraph */
+.home-card p {
+    color: #636363;
+    margin-bottom: 2vh;
+    font-size: 1.1rem;
+}
+
+/* Button Styling */
+.home-card button {
+    background-color: transparent;
+    color: #ee4950;
+    border: 1.5px solid #ee4950;
+    font-size: 1rem;
+    padding: 8px 20px;
+    width: 85%;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 500;
+}
+
+.home-card button:hover {
+    background-color: #ee4950;
+    color: #f1e3e4;
+    border: 1.5px solid #ee4950;
+}
+
+/* Freelancer Details Section */
+.freelancer-details {
+    margin-top: 5vh;
+    width: 60%;
+    min-height: 35vh;
+    margin-left: 5vw;
+    padding: 2vh 2vw 3vh 2vw;
+    background: rgba(231, 220, 215, 0.13);
+    border-radius: 1rem;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(196, 191, 189, 0.26);
+}
+
+/* Freelancer Details Data */
+.freelancer-details-data {
+    margin-top: 3vh;
+}
+
+.freelancer-details-data span h4 {
+    font-size: 1.5rem;
+    margin-top: 1vh;
+    color: #2b2a2a;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.freelancer-details-data span p {
+    font-size: 1rem;
+    color: #636363;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+.freelancer-details-data .skills {
+    display: flex;
+    gap: 15px;
+    margin-top: 2vh;
+    flex-wrap: wrap;
+}
+
+.freelancer-details-data .skill {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #ee4950;
+    border: 1px solid #ee4950;
+    padding: 8px 14px;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.freelancer-details-data .skill:hover {
+    background-color: #ee4950;
+    color: #f1e3e4;
+}
+
+/* Freelancer Update Section */
+.freelancer-details-update {
+    margin-top: 4vh;
+}
+
+.freelancer-details-update h4 {
+    font-size: 1.4rem;
+    color: #2b2a2a;
+    font-weight: 600;
+}
+
+.freelancer-details-update input,
+.freelancer-details-update textarea {
+    width: 100%;
+    padding: 1.5vh;
+    margin-top: 1.5vh;
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(196, 191, 189, 0.26);
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.freelancer-details-update input:focus,
+.freelancer-details-update textarea:focus {
+    outline: none;
+    border-color: #ee4950;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #ee4950;
+    color: #f1e3e4;
+    padding: 2vh 0;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 5vh;
+}
+
+footer a {
+    color: #f1e3e4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
